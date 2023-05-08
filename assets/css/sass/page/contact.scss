@@ -1,0 +1,137 @@
+.contactus{
+	padding: 70px 0;
+
+        @media (max-width: 767px) {
+            padding: 45px 0;
+        }
+}
+.contactus-body{
+	padding-top: 60px;
+	display: flex;
+	@media (max-width: 991px) {
+        display: block;
+        padding-top: 40px;
+    }
+	.contactus-left{
+		
+		&__item{
+			display: grid;
+			grid-template-columns: 60px auto;
+			grid-template-rows: 55px;
+			margin-bottom: 40px;
+
+			@media (max-width: 767px) {
+            grid-template-rows: 45px;
+        }
+		}
+		&__icon{
+			background-color: $color-primary;
+			border-radius: 50%;
+			text-align: center;
+			width: 55px;
+			display: flex;
+			
+			@media (max-width: 767px) {
+            width: 45px;
+        }
+			i{
+				color: $color-txt-white;
+				font-size: 1.6rem;
+				margin: auto;
+			}
+		}
+		&__txt{
+			margin-left: 15px;
+			@media (max-width: 767px) {
+            margin-left: 0px;
+        }
+		}
+		.contactus-adress{
+			margin-bottom: 50px;
+			@media (max-width: 575px) {
+			margin-bottom: 80px;
+		}
+		}
+		&__link:hover{
+			text-decoration: none;
+			color: $color-white;
+		}
+	}
+	.contactus-right{
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0;
+		@media (max-width: 991px) {
+        padding-top: 30px;
+    }
+
+		&__input{
+			height: 55px;
+			font-size: 1.8rem;
+			margin-bottom: 15px;
+		}
+		&__mess{
+			height: 128px;
+		}
+		&__btn{
+			margin: auto;
+		}
+	}
+}
+.contact-map{
+	position: relative;
+	@media (max-width: 767px) {
+	
+			iframe{
+				height: 45vh;
+			}
+		}
+		@media (max-width: 575px) {
+	
+			iframe{
+				height: 35vh;
+			}
+		}
+}
+.contact-time{
+	&__title{
+		@media (max-width: 991px) {
+			text-align: center;
+		}
+	}
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	height: 100%;
+	padding: 20px 40px 20px 60px;
+
+	@media (max-width: 991px) {
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       position:static;      
+       padding: 20px;
+    }
+    @media (max-width: 575px) {
+      
+       
+    }
+
+	&__title{
+		color: $color-white;
+		font-size: 2.8rem;
+		font-weight: 600;
+	}
+	&__work{
+		padding-top: 15px;
+	}
+	&__item{
+		display: flex;
+		font-size: 1.7rem;
+		color: $color-white;
+		margin-bottom: 15px;
+		justify-content: space-between;
+
+	}
+}

@@ -1,0 +1,344 @@
+@media (min-width: 320px) {
+    .container {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+@media (min-width: 575px) {
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+// declare background-color
+
+.bg-black {
+    background-color: $color-black;
+}
+
+.bg-white {
+    background-color: $color-white;
+}
+
+.bg-gray {
+    background-color: $color-bg-gray;
+}
+
+.bg-beige {
+    background-color: $color-bg-beige;
+}
+
+.bg-clear {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+// declare text-color
+
+.txt-black {
+    color: $color-txt-black;
+}
+
+.txt-white {
+    color: $color-txt-white !important;
+}
+
+.txt-gray {
+    color: $color-txt-gray;
+}
+
+.txt-opalescent {
+    color: $color-opalescent;
+}
+
+// declare property
+.flow-hide{
+    overflow-y: hidden;
+}
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+.display-block{
+    display: block;
+}
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.flex-centerX {
+    align-items: center;
+}
+
+.flex-centerY {
+    justify-content: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-left {
+    justify-content: flex-start;
+}
+
+.flex-right {
+    justify-content: flex-end;
+}
+
+.overlay-common {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.btn-common {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 13px 30px;
+    max-height: 52px;
+
+    @media (max-width: 480px) {
+        padding: 13px 20px;
+    }
+}
+
+.btn-common:focus {
+    outline: none;
+    
+}
+
+.btn-color-pri {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.btn-color-pri:hover {
+    background-color: #b0641c;
+}
+
+.btn-color-white {
+    background-color: $color-white;
+    color: $color-primary;
+}
+
+.btn-color-white:hover {
+    color: $color-black;
+    background-color: $color-white;
+}
+
+.btn-border {
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-border:hover {
+    color: $color-white;
+    background-color: $color-primary;
+}
+
+.btn-has-icon {
+    font-size: 1.2rem;
+    padding: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: $color-white;
+    background-color: $color-primary;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+
+    i {
+        font-size: 1.8rem;
+    }
+}
+
+.btn-has-icon:focus {
+    outline: none;
+    border: none;
+}
+
+.input-common {
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+// text
+.title-common {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+@media (max-width: 1024px) {
+        font-size: 3rem;
+    }
+    @media (max-width: 991px) {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 2.8rem;
+    }
+
+    @media (max-width: 575px) {
+        line-height: 35px;
+
+    }
+}
+
+.subtitle-common {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #999999;
+    margin-bottom: 10px;
+
+    @media (max-width: 575px) {
+        font-size: 2rem;
+
+    }
+}
+
+.desc-common {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    word-spacing: 2.5px;
+    margin: 25px 0 45px 0;
+    font-weight: 500;
+
+    @media (max-width: 991px) {
+        margin: 20px 0 25px 0;
+
+    }
+
+    @media (max-width: 575px) {
+        margin: 25px 0 25px 0;
+
+    }
+
+    @media (max-width: 480px) {
+        font-size: 1.6rem;
+        margin: 20px 0 20px 0;
+    }
+}
+
+.img-common {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    @media (max-width: 767px) {
+        margin-top: 30px;
+    }
+    @media (max-width: 575px) {
+        margin-top: 15px;
+    }
+}
+
+.smtitle-common {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
+
+    @media (max-width: 575px) {
+        font-size: 2.2rem;
+
+    }
+}
+
+.padding-common {
+    padding: 96px 0;
+
+    @media (max-width: 991px) {
+        padding: 60px 0;
+    }
+
+    @media (max-width: 768px) {
+        padding: 48px 0;
+    }
+
+    @media (max-width: 575px) {
+        padding: 42px 0;
+    }
+}
+
+.bg-cover {
+    position: relative;
+    height: 238px;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+    z-index: 0;
+
+    &__wrap{
+        
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+
+    }
+
+    &__text {
+        display: flex;
+        padding: 15px 0;
+    }
+
+    &__link {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: $color-txt-gray;
+        font-weight: 600;
+    }
+    &__link:hover{
+        text-decoration: none;
+        color: $color-primary;
+    }
+    &__pagenow{
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin: 0;
+        margin-left: 10px;
+    }
+}
+.bg-cover:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
